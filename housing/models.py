@@ -1,8 +1,9 @@
 from pydantic import BaseModel
 
-class HousingProject(BaseModel):
+class HousingContract(BaseModel):
     """Model showing number of units in a project for various levels of affordability."""
-    id: int
+    Contract_ID: int
+    Project_ID: int
     PSH_Units: int
     MFI_20: int
     MFI_30: int
